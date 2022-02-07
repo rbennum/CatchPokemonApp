@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="69" id="KGk-i7-Jjw" customClass="PokemonListTVC" customModule="CatchPokemonApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g2X-u4-qSO" userLabel="Pokemon Image View">
+                        <rect key="frame" x="10" y="10" width="40" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="U6c-9K-CeN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7Y-1U-axV" userLabel="Pokemon Name Label">
+                        <rect key="frame" x="60" y="24" width="250" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="g2X-u4-qSO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="0mR-Rx-JhW"/>
+                    <constraint firstAttribute="bottom" secondItem="g2X-u4-qSO" secondAttribute="bottom" constant="10" id="EMf-kQ-rvP"/>
+                    <constraint firstItem="p7Y-1U-axV" firstAttribute="leading" secondItem="g2X-u4-qSO" secondAttribute="trailing" constant="10" id="NYd-Ia-Cxp"/>
+                    <constraint firstAttribute="trailing" secondItem="p7Y-1U-axV" secondAttribute="trailing" constant="10" id="Qpg-qJ-c6n"/>
+                    <constraint firstItem="p7Y-1U-axV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Zg4-Ix-fYj"/>
+                    <constraint firstItem="g2X-u4-qSO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="vNG-pi-Pkg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="pokemonImageView" destination="g2X-u4-qSO" id="UG4-o5-yDm"/>
+                <outlet property="pokemonNameLabel" destination="p7Y-1U-axV" id="Y8z-ce-haN"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="148.32589285714286"/>
+        </tableViewCell>
+    </objects>
+</document>
